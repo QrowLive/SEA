@@ -12,7 +12,7 @@
   <meta property="og:url" content="https://qrowlive.github.io/SEA/">
   <meta name="color-scheme" content="dark">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="stylesheet" href="css/styles.css?v=20261115-3">
+  <link rel="stylesheet" href="css/styles.css?v=20261115-4">
   <title>SEA — Shooter Entre Amis | Hero shooter indépendant</title>
 </head>
 <body>
@@ -73,8 +73,8 @@
           </div>
           <div class="hero-footnote"><span class="hero-mini-square"></span> DÉVELOPPÉ SOUS UNITY <span class="tiny-sep">/</span> AUCUNE DATE DE SORTIE ANNONCÉE</div>
         </div>
-        <div class="hero-art" aria-label="Illustration conceptuelle abstraite d'une arène futuriste et d'un trajet de convoi" role="img">
-          <div class="art-top"><span><span class="signal-dot"></span> SEA / TACTICAL VIEW</span><span>PROTO / 001</span></div>
+        <div class="hero-art" aria-label="Illustration conceptuelle d'un affrontement tactique 3 contre 3 dans une arène futuriste" role="img">
+          <div class="art-top"><span><span class="signal-dot"></span> SEA / TACTICAL VIEW</span><span>3V3 / 001</span></div>
           <div class="arena-frame">
             <svg class="arena-svg" viewBox="0 0 750 640" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
               <defs>
@@ -108,22 +108,28 @@
                 </g>
                 <path d="M141 257 187 231m406-18 40 22M360 382l26 13" stroke="#5be3f3" stroke-opacity=".5" stroke-width="2"/>
               </g>
-              <path class="path-glow" d="M194 334 278 353 365 306 435 330 561 259" fill="none" stroke="#45dce9" stroke-width="23" opacity=".28" filter="url(#softglow)"/>
-              <path d="M194 334 278 353 365 306 435 330 561 259" fill="none" stroke="url(#routeGradient)" stroke-width="4" stroke-linecap="round" stroke-dasharray="12 10"/>
-              <g class="route-point" transform="translate(194 334)"><circle r="20" fill="#45dce9" fill-opacity=".06" stroke="#45dce9" stroke-opacity=".55"/><circle r="8" fill="#45dce9"/><path d="M-30 0h-11m71 0h11M0-30v-11m0 71v11" stroke="#71f3ff" opacity=".6"/></g>
-              <g class="route-point" transform="translate(365 306)"><circle r="16" fill="#091927" stroke="#c7faff" stroke-width="2"/><path d="M-6 0h12M0-6v12" stroke="#c7faff" stroke-width="2"/></g>
-              <g class="route-point" transform="translate(561 259)"><circle r="24" fill="#43dbf0" fill-opacity=".08" stroke="#43dbf0" stroke-opacity=".6"/><circle r="14" fill="none" stroke="#baffff" stroke-width="2"/><circle r="4" fill="#baffff"/></g>
-              <g class="enemy-dot" transform="translate(470 240)"><circle r="25" fill="#d77bcf" opacity=".12"/><circle r="8" fill="#ec8ee1"/><path d="M-17 -17 17 17m0-34-34 34" stroke="#e184da" stroke-width="1" opacity=".5"/></g>
-              <g class="friendly-dot" transform="translate(320 261)"><circle r="18" fill="#49dcfa" opacity=".13"/><circle r="7" fill="#76eeff"/><circle r="11" fill="none" stroke="#76eeff" stroke-opacity=".7"/></g>
-              <g fill="#d8ffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" letter-spacing="2"><text x="150" y="382">START</text><text x="548" y="221">GOAL</text><text x="358" y="273" fill="#75e5f3">CP-01</text></g>
+              <!-- Vue tactique 3v3 : 3 unités cyan contre 3 unités magenta -->
+              <g fill="none" stroke-width="2.5" stroke-linecap="round" opacity=".7">
+                <path d="M218 311 306 262 348 342" stroke="#6ae9f6" stroke-dasharray="8 9"/>
+                <path d="M456 210 526 256 463 327" stroke="#db8fd7" stroke-dasharray="8 9"/>
+                <path d="M306 262 456 210M348 342 463 327" stroke="#a5b8d3" stroke-opacity=".35" stroke-dasharray="4 12"/>
+              </g>
+              <g transform="translate(218 311)"><circle r="23" fill="#51e1ef" fill-opacity=".10" stroke="#62ecf5" stroke-opacity=".7"/><circle r="11" fill="#081e2b" stroke="#79f1fa" stroke-width="3"/><circle r="4" fill="#79f1fa"/></g>
+              <g transform="translate(306 262)"><circle r="23" fill="#51e1ef" fill-opacity=".10" stroke="#62ecf5" stroke-opacity=".7"/><circle r="11" fill="#081e2b" stroke="#79f1fa" stroke-width="3"/><circle r="4" fill="#79f1fa"/></g>
+              <g transform="translate(348 342)"><circle r="23" fill="#51e1ef" fill-opacity=".10" stroke="#62ecf5" stroke-opacity=".7"/><circle r="11" fill="#081e2b" stroke="#79f1fa" stroke-width="3"/><circle r="4" fill="#79f1fa"/></g>
+              <g transform="translate(456 210)"><circle r="23" fill="#d782cd" fill-opacity=".12" stroke="#e39cda" stroke-opacity=".7"/><circle r="11" fill="#291627" stroke="#ec9de2" stroke-width="3"/><circle r="4" fill="#ec9de2"/></g>
+              <g transform="translate(526 256)"><circle r="23" fill="#d782cd" fill-opacity=".12" stroke="#e39cda" stroke-opacity=".7"/><circle r="11" fill="#291627" stroke="#ec9de2" stroke-width="3"/><circle r="4" fill="#ec9de2"/></g>
+              <g transform="translate(463 327)"><circle r="23" fill="#d782cd" fill-opacity=".12" stroke="#e39cda" stroke-opacity=".7"/><circle r="11" fill="#291627" stroke="#ec9de2" stroke-width="3"/><circle r="4" fill="#ec9de2"/></g>
+              <g transform="translate(391 285)"><circle r="31" fill="#0c1b29" fill-opacity=".92" stroke="#b4d7e4" stroke-opacity=".75"/><path d="M-12 0h24M0-12v24" stroke="#b4d7e4" stroke-opacity=".7" stroke-width="2"/><circle r="4" fill="#eefbff"/></g>
+              <g fill="#d8ffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" letter-spacing="2"><text x="164" y="364" fill="#79f1fa">ALPHA / 03</text><text x="484" y="185" fill="#ec9de2">BRAVO / 03</text><text x="368" y="393">3V3</text></g>
               <g stroke="#5c9cae" stroke-opacity=".43" fill="none"><path d="M88 140h95m-95 0v20M615 400h55v-25"/><circle cx="88" cy="140" r="4"/><circle cx="670" cy="375" r="4"/></g>
             </svg>
             <div class="arena-number" aria-hidden="true">03<span> / 03</span></div>
-            <div class="art-overlay art-overlay-one"><span class="overlay-tag">AXE DE MISSION</span><strong>ESCORTE DE CONVOI</strong><span>ROUTE / CP01 / CP02</span></div>
+            <div class="art-overlay art-overlay-one"><span class="overlay-tag">MODE PRINCIPAL</span><strong>COMBAT 3V3</strong><span>ALPHA / 03 VS BRAVO / 03</span></div>
             <div class="art-overlay art-overlay-two"><span class="radar-dot"></span><div><strong>COORDINATION</strong><span>UNITÉS EN POSITION</span></div></div>
             <div class="visual-ruler" aria-hidden="true"><span>00</span><span>25</span><span>50</span><span>75</span><span>100</span></div>
           </div>
-          <div class="art-bottom"><span>REPRÉSENTATION CONCEPTUELLE</span><span class="art-bottom-right"><span class="mini-led"></span> SYSTÈME EN CONSTRUCTION</span></div>
+          <div class="art-bottom"><span>ARÈNE 3V3 / REPRÉSENTATION CONCEPTUELLE</span><span class="art-bottom-right"><span class="mini-led"></span> SYSTÈME EN CONSTRUCTION</span></div>
         </div>
       </div>
       <div class="container hero-bottom"><span>SCROLL POUR EXPLORER</span><div class="scroll-line" aria-hidden="true"></div><span>01 — 06</span></div>
@@ -214,6 +220,6 @@
   <footer class="site-footer"><div class="container footer-top"><div><a class="brand footer-brand" href="#haut"><img class="brand-mark" src="assets/sea-mark.svg" alt="" width="42" height="42"><span class="brand-type"><strong>SEA</strong><small>SHOOTER ENTRE AMIS</small></span></a><p>Un projet indépendant. Une idée simple : mieux jouer ensemble.</p></div><a class="back-top" href="#haut">RETOUR EN HAUT <svg class="icon"><use href="#i-arrow-up"></use></svg></a></div><div class="container footer-bottom"><span>© <span id="year">2026</span> SHOOTER ENTRE AMIS</span><span>SITE DE PRÉSENTATION — PROTOTYPE EN DÉVELOPPEMENT</span><span>CRÉÉ POUR LA COMMUNAUTÉ SEA</span></div></footer>
 
   <dialog class="character-dialog" id="character-dialog" aria-labelledby="dialog-title"><button class="dialog-close" id="dialog-close" aria-label="Fermer la fiche du héros" type="button"><svg class="icon"><use href="#i-close"></use></svg></button><div class="dialog-inner"><p class="section-kicker" id="dialog-category">FICHE HÉROS</p><h2 id="dialog-title"></h2><p class="dialog-status" id="dialog-status"></p><p id="dialog-description"></p><div class="dialog-stats" id="dialog-stats" aria-label="Repères de gameplay"></div><h3>STYLE DE JEU & COMPÉTENCES</h3><ul id="dialog-abilities"></ul><p class="dialog-footnote">Informations de conception susceptibles d'évoluer au fil du développement.</p></div></dialog>
-  <script src="js/main.js?v=20261115-3" defer></script>
+  <script src="js/main.js?v=20261115-4" defer></script>
 </body>
 </html>
