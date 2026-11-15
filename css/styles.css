@@ -416,3 +416,16 @@ h2 em { font-style:normal; color:#819eae; }
   .project-sea-art img { width:67px; }
   .filter-btn { font-size:7px; }
 }
+
+/* SEA 2026 — fiche de gameplay, lisibilité, identité technique */
+.dialog-stats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px}
+.dialog-stats span{border:1px solid rgba(120,232,238,.23);background:rgba(120,232,238,.065);color:#d9f9fc;padding:8px 11px;font-size:11px;font-weight:800;letter-spacing:.035em}
+.character-dialog{border-top:3px solid var(--cyan)}
+.character-dialog .dialog-inner h3{border-top:1px solid rgba(120,232,238,.17);padding-top:21px}
+.character-dialog li{line-height:1.65}
+.character-card.blaze .character-illustration{background:radial-gradient(ellipse at 50% 65%,rgba(57,216,233,.17),transparent 64%),linear-gradient(180deg,transparent,rgba(2,10,19,.25))}
+.character-card.myranda .character-illustration{background:radial-gradient(ellipse at 50% 65%,rgba(139,157,243,.19),transparent 64%),linear-gradient(180deg,transparent,rgba(2,10,19,.25))}
+.character-card.cardistral .character-illustration{background:radial-gradient(ellipse at 50% 65%,rgba(212,123,222,.18),transparent 64%),linear-gradient(180deg,transparent,rgba(2,10,19,.25))}
+.character-card.qrow .character-illustration{background:radial-gradient(ellipse at 50% 65%,rgba(77,173,192,.18),transparent 64%),linear-gradient(180deg,transparent,rgba(2,10,19,.25))}
+.character-card.operateur .character-illustration{background:radial-gradient(ellipse at 50% 65%,rgba(201,154,99,.17),transparent 64%),linear-gradient(180deg,transparent,rgba(2,10,19,.25))}
+@media(max-width:580px){.dialog-stats span{font-size:10px;padding:7px 9px}}
