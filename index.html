@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d14">
+  <meta name="description" content="Shooter Entre Amis (SEA) : un hero shooter multijoueur indépendant pensé pour les combats en équipe. Découvrez les héros, les modes de jeu et l'avancement du projet.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SEA — Shooter Entre Amis">
+  <meta property="og:description" content="Un hero shooter indépendant où chaque rôle compte. Projet en développement.">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>SEA — Shooter Entre Amis | Hero shooter indépendant</title>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 17 12-12M7 5h10v10"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 1v4m0 14v4M1 12h4m14 0h4"/></symbol>
+    <symbol id="i-turret" viewBox="0 0 24 24"><path d="M7 8h10l2 6H5l2-6Zm5-5v5M8 14l-2 7m10-7 2 7M4 11H1m22 0h-3"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4Z"/><path d="m8.5 12 2.3 2.3 4.7-5"/></symbol>
+    <symbol id="i-cards" viewBox="0 0 24 24"><rect x="7" y="3" width="13" height="17" rx="2"/><path d="M7 7 4.5 8A2 2 0 0 0 3 10v10a2 2 0 0 0 2 2h10M13.5 8.5 16 11l-2.5 2.5L11 11l2.5-2.5Z"/></symbol>
+    <symbol id="i-bow" viewBox="0 0 24 24"><path d="M6 2c9 4 9 16 0 20M6 2v20m0-10h15m-4-4 4 4-4 4"/></symbol>
+    <symbol id="i-drone" viewBox="0 0 24 24"><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 10 5 6m10 4 4-4M9 14l-4 4m10-4 4 4"/><circle cx="4" cy="5" r="2"/><circle cx="20" cy="5" r="2"/><circle cx="4" cy="19" r="2"/><circle cx="20" cy="19" r="2"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 22V3m0 1c7-5 8 5 15 0v12c-7 5-8-5-15 0"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="5" cy="19" r="2"/><circle cx="19" cy="5" r="2"/><path d="M7 19h5a4 4 0 0 0 0-8h-1a4 4 0 0 1 0-8h6"/></symbol>
+    <symbol id="i-zones" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="5"/><path d="M12 1v4m0 14v4M1 12h4m14 0h4"/></symbol>
+    <symbol id="i-swords" viewBox="0 0 24 24"><path d="m3 3 7 7m4 4 7 7M2 2l5 1 14 14-4 4L3 7 2 2Zm19 0-7 7m-4 4-7 7"/></symbol>
+    <symbol id="i-team" viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 21v-2a6 6 0 0 1 12 0v2M14 15a5 5 0 0 1 8 4v2"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5 19 19M19 5 5 19"/></symbol>
+  </svg>
+
+  <header class="site-header" id="haut">
+    <div class="container header-inner">
+      <a class="brand" href="#haut" aria-label="SEA, retour en haut">
+        <img class="brand-mark" src="assets/sea-mark.svg" alt="" width="42" height="42">
+        <span class="brand-type"><strong>SEA</strong><small>SHOOTER ENTRE AMIS</small></span>
+      </a>
+      <nav class="nav" id="nav-principale" aria-label="Navigation principale">
+        <a href="#jeu">LE JEU</a>
+        <a href="#heros">LES HÉROS</a>
+        <a href="#modes">MODES</a>
+        <a href="#developpement">DÉVELOPPEMENT</a>
+        <a href="#projets">PROJETS</a>
+      </nav>
+      <div class="header-side">
+        <span class="status-pill"><span class="status-dot"></span> EN DÉVELOPPEMENT</span>
+        <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-controls="nav-principale" aria-expanded="false"><svg class="icon menu-icon"><use href="#i-menu"></use></svg><svg class="icon close-icon"><use href="#i-close"></use></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="eyebrow-line"></span> HERO SHOOTER MULTIJOUEUR <span class="small-diamond">◆</span> PROJET INDÉPENDANT</div>
+          <h1 id="hero-title" class="hero-title"><span>SHOOTER</span><span>ENTRE</span><span class="gradient-word">AMIS<span class="period">.</span></span></h1>
+          <p class="hero-lead">Des héros uniques. Des stratégies collectives. <strong>Une seule équipe.</strong></p>
+          <p class="hero-copy">SEA est un FPS multijoueur où les rôles se complètent, la mobilité ouvre de nouvelles possibilités et la victoire se construit ensemble.</p>
+          <div class="hero-actions">
+            <a href="#jeu" class="btn btn-primary">DÉCOUVRIR LE JEU <svg class="icon"><use href="#i-arrow"></use></svg></a>
+            <a href="#heros" class="btn btn-outline">VOIR LES HÉROS <svg class="icon"><use href="#i-arrow-up"></use></svg></a>
+          </div>
+          <div class="hero-footnote"><span class="hero-mini-square"></span> DÉVELOPPÉ SOUS UNITY <span class="tiny-sep">/</span> AUCUNE DATE DE SORTIE ANNONCÉE</div>
+        </div>
+        <div class="hero-art" aria-label="Illustration conceptuelle abstraite d'une arène futuriste et d'un trajet de convoi" role="img">
+          <div class="art-top"><span><span class="signal-dot"></span> SEA / TACTICAL VIEW</span><span>PROTO / 001</span></div>
+          <div class="arena-frame">
+            <svg class="arena-svg" viewBox="0 0 750 640" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+              <defs>
+                <linearGradient id="arenaFloor" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#152536"/><stop offset=".6" stop-color="#101a29"/><stop offset="1" stop-color="#0b1320"/></linearGradient>
+                <linearGradient id="routeGradient" x1="0" x2="1"><stop stop-color="#48e8f2"/><stop offset="1" stop-color="#c5f8ff"/></linearGradient>
+                <linearGradient id="accentBlock" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#1e5365"/><stop offset="1" stop-color="#123044"/></linearGradient>
+                <pattern id="floorGrid" width="38" height="38" patternUnits="userSpaceOnUse" patternTransform="matrix(0.93 0.36 -0.93 0.36 0 0)"><path d="M38 0H0V38" fill="none" stroke="#8ed5e8" stroke-opacity=".13" stroke-width="1"/></pattern>
+                <filter id="softglow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="9"/></filter>
+              </defs>
+              <g class="arena-platform">
+                <path d="M90 235 380 77 672 239 385 408Z" fill="#060c15" opacity=".8" transform="translate(0 92)"/>
+                <path d="M90 235 380 77 672 239 385 408 90 235v42l295 174 287-170v-42L385 408 90 235" fill="#07121e" stroke="#3c7484" stroke-opacity=".4"/>
+                <path d="M90 235 380 77 672 239 385 408Z" fill="url(#arenaFloor)" stroke="#4ac4df" stroke-opacity=".44" stroke-width="2"/>
+                <path d="M90 235 380 77 672 239 385 408Z" fill="url(#floorGrid)" opacity=".8"/>
+                <path d="M125 240 380 100 635 242 385 385Z" fill="none" stroke="#65a0ae" stroke-opacity=".2" stroke-width="2" stroke-dasharray="6 10"/>
+                <g class="building">
+                  <path d="M240 213 311 174 369 207 298 246Z" fill="#2e5e6b"/><path d="M240 213 298 246v44l-58-33Z" fill="#102736"/><path d="M298 246 369 207v44l-71 39Z" fill="#183949"/>
+                  <path d="M240 213 311 174 369 207 298 246Z" fill="url(#accentBlock)" stroke="#79c9d8" stroke-opacity=".6"/><path d="m267 213 42-23 33 19-42 22Z" fill="none" stroke="#77ddec" stroke-opacity=".55"/>
+                </g>
+                <g class="building">
+                  <path d="M398 165 469 125 520 154 450 193Z" fill="#2d5369"/><path d="M398 165 450 193v82l-52-30Z" fill="#132a3d"/><path d="M450 193 520 154v82l-70 39Z" fill="#1e4151"/>
+                  <path d="M398 165 469 125 520 154 450 193Z" fill="url(#accentBlock)" stroke="#79c9d8" stroke-opacity=".5"/>
+                  <path d="M408 203v31m16-21v30m43-42v54m19-64v53" stroke="#4ac4df" stroke-opacity=".25" stroke-width="2"/>
+                </g>
+                <g class="building">
+                  <path d="M475 294 547 253 599 283 528 325Z" fill="#214a59"/><path d="M475 294 528 325v43l-53-31Z" fill="#112c39"/><path d="M528 325 599 283v45l-71 40Z" fill="#1a3b4b"/>
+                  <path d="M475 294 547 253 599 283 528 325Z" fill="url(#accentBlock)" stroke="#79c9d8" stroke-opacity=".55"/>
+                </g>
+                <g class="building">
+                  <path d="M180 279 233 250 276 275 223 304Z" fill="#245261"/><path d="M180 279 223 304v34l-43-24Z" fill="#102a3a"/><path d="M223 304 276 275v33l-53 30Z" fill="#153647"/><path d="M180 279 233 250 276 275 223 304Z" fill="url(#accentBlock)" stroke="#79c9d8" stroke-opacity=".5"/>
+                </g>
+                <path d="M141 257 187 231m406-18 40 22M360 382l26 13" stroke="#5be3f3" stroke-opacity=".5" stroke-width="2"/>
+              </g>
+              <path class="path-glow" d="M194 334 278 353 365 306 435 330 561 259" fill="none" stroke="#45dce9" stroke-width="23" opacity=".28" filter="url(#softglow)"/>
+              <path d="M194 334 278 353 365 306 435 330 561 259" fill="none" stroke="url(#routeGradient)" stroke-width="4" stroke-linecap="round" stroke-dasharray="12 10"/>
+              <g class="route-point" transform="translate(194 334)"><circle r="20" fill="#45dce9" fill-opacity=".06" stroke="#45dce9" stroke-opacity=".55"/><circle r="8" fill="#45dce9"/><path d="M-30 0h-11m71 0h11M0-30v-11m0 71v11" stroke="#71f3ff" opacity=".6"/></g>
+              <g class="route-point" transform="translate(365 306)"><circle r="16" fill="#091927" stroke="#c7faff" stroke-width="2"/><path d="M-6 0h12M0-6v12" stroke="#c7faff" stroke-width="2"/></g>
+              <g class="route-point" transform="translate(561 259)"><circle r="24" fill="#43dbf0" fill-opacity=".08" stroke="#43dbf0" stroke-opacity=".6"/><circle r="14" fill="none" stroke="#baffff" stroke-width="2"/><circle r="4" fill="#baffff"/></g>
+              <g class="enemy-dot" transform="translate(470 240)"><circle r="25" fill="#d77bcf" opacity=".12"/><circle r="8" fill="#ec8ee1"/><path d="M-17 -17 17 17m0-34-34 34" stroke="#e184da" stroke-width="1" opacity=".5"/></g>
+              <g class="friendly-dot" transform="translate(320 261)"><circle r="18" fill="#49dcfa" opacity=".13"/><circle r="7" fill="#76eeff"/><circle r="11" fill="none" stroke="#76eeff" stroke-opacity=".7"/></g>
+              <g fill="#d8ffff" font-family="Arial, sans-serif" font-size="12" font-weight="bold" letter-spacing="2"><text x="150" y="382">START</text><text x="548" y="221">GOAL</text><text x="358" y="273" fill="#75e5f3">CP-01</text></g>
+              <g stroke="#5c9cae" stroke-opacity=".43" fill="none"><path d="M88 140h95m-95 0v20M615 400h55v-25"/><circle cx="88" cy="140" r="4"/><circle cx="670" cy="375" r="4"/></g>
+            </svg>
+            <div class="arena-number" aria-hidden="true">03<span> / 03</span></div>
+            <div class="art-overlay art-overlay-one"><span class="overlay-tag">AXE DE MISSION</span><strong>ESCORTE DE CONVOI</strong><span>ROUTE / CP01 / CP02</span></div>
+            <div class="art-overlay art-overlay-two"><span class="radar-dot"></span><div><strong>COORDINATION</strong><span>UNITÉS EN POSITION</span></div></div>
+            <div class="visual-ruler" aria-hidden="true"><span>00</span><span>25</span><span>50</span><span>75</span><span>100</span></div>
+          </div>
+          <div class="art-bottom"><span>REPRÉSENTATION CONCEPTUELLE</span><span class="art-bottom-right"><span class="mini-led"></span> SYSTÈME EN CONSTRUCTION</span></div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span>SCROLL POUR EXPLORER</span><div class="scroll-line" aria-hidden="true"></div><span>01 — 06</span></div>
+    </section>
+
+    <section class="metrics-band" aria-label="Quelques repères sur SEA">
+      <div class="container metrics-grid">
+        <div class="metric"><strong>3<span>v</span>3</strong><small>COMBATS EN ÉQUIPE VISÉS</small></div>
+        <div class="metric"><strong>05</strong><small>MODES DE JEU ENVISAGÉS</small></div>
+        <div class="metric"><strong>05</strong><small>HÉROS PRÉSENTÉS</small></div>
+        <div class="metric"><strong>01</strong><small>UN PROJET INDÉPENDANT</small></div>
+      </div>
+    </section>
+
+    <section class="section intro-section" id="jeu" aria-labelledby="jeu-title">
+      <div class="container">
+        <div class="section-heading two-col-heading">
+          <div><p class="section-kicker"><span>01 /</span> LE CONCEPT</p><h2 id="jeu-title">LE JEU CHANGE.<br><em>L'ÉQUIPE FAIT LA DIFFÉRENCE.</em></h2></div>
+          <p class="section-intro">Dans SEA, chaque héros apporte une façon différente de jouer. Le but : faire fonctionner des capacités complémentaires, inventer des trajectoires et gagner ensemble.</p>
+        </div>
+        <div class="principles">
+          <article class="principle"><div class="principle-top"><span>01</span><svg class="icon"><use href="#i-team"></use></svg></div><h3>JOUER COLLECTIF</h3><p>Défense, soutien, dégâts ou reconnaissance : chaque rôle devient une pièce du plan.</p></article>
+          <article class="principle"><div class="principle-top"><span>02</span><svg class="icon"><use href="#i-route"></use></svg></div><h3>BOUGER LIBREMENT</h3><p>Grappin, téléportation, glissades et déplacements avancés selon les capacités de chaque héros.</p></article>
+          <article class="principle"><div class="principle-top"><span>03</span><svg class="icon"><use href="#i-target"></use></svg></div><h3>CRÉER SA STRATÉGIE</h3><p>Combinaisons de cartes, tourelles et outils tactiques : des possibilités à maîtriser en équipe.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section heroes-section" id="heros" aria-labelledby="heros-title">
+      <div class="container">
+        <div class="section-heading heroes-heading">
+          <div><p class="section-kicker"><span>02 /</span> LES PERSONNAGES</p><h2 id="heros-title">CHOISIS TON RÔLE.<br><em>MARQUE LA PARTIE.</em></h2></div>
+          <div class="filter-group" role="group" aria-label="Filtrer les héros">
+            <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">TOUS <span>05</span></button>
+            <button class="filter-btn" type="button" data-filter="validated" aria-pressed="false">GAMEPLAY VALIDÉ</button>
+            <button class="filter-btn" type="button" data-filter="concept" aria-pressed="false">EN CONCEPTION</button>
+          </div>
+        </div>
+        <div class="hero-grid" id="hero-grid">
+          <article class="character-card blaze" data-status="validated"><div class="card-accent"></div><div class="character-top"><span>01 / INGÉNIEURE</span><span>GAMEPLAY VALIDÉ</span></div><div class="character-illustration"><div class="character-orbit orbit-a"></div><div class="character-orbit orbit-b"></div><span class="character-initial">B</span><svg class="icon character-symbol"><use href="#i-turret"></use></svg></div><div class="character-info"><span class="character-eyebrow">CONTRÔLE DU TERRAIN</span><h3>BLAZE</h3><p>Ses tourelles, mines et son grappin transforment chaque espace en terrain tactique.</p><button class="character-link" type="button" data-character="blaze">VOIR LA FICHE <svg class="icon"><use href="#i-arrow-up"></use></svg></button></div></article>
+          <article class="character-card myranda" data-status="validated"><div class="card-accent"></div><div class="character-top"><span>02 / COLOSSE</span><span>GAMEPLAY VALIDÉ</span></div><div class="character-illustration"><div class="character-orbit orbit-a"></div><div class="character-orbit orbit-b"></div><span class="character-initial">M</span><svg class="icon character-symbol"><use href="#i-shield"></use></svg></div><div class="character-info"><span class="character-eyebrow">PROTECTION & IMPACT</span><h3>MYRANDA</h3><p>Épée d'énergie, bouclier et intervention : elle encaisse pour mieux riposter.</p><button class="character-link" type="button" data-character="myranda">VOIR LA FICHE <svg class="icon"><use href="#i-arrow-up"></use></svg></button></div></article>
+          <article class="character-card cardistral" data-status="concept"><div class="card-accent"></div><div class="character-top"><span>03 / CARTOMANCIEN</span><span>EN CONCEPTION</span></div><div class="character-illustration"><div class="character-orbit orbit-a"></div><div class="character-orbit orbit-b"></div><span class="character-initial">C</span><svg class="icon character-symbol"><use href="#i-cards"></use></svg></div><div class="character-info"><span class="character-eyebrow">COMBINAISONS & SOUTIEN</span><h3>CARDISTRAL</h3><p>Il compose ses sorts à partir de cartes pour soutenir, déplacer ou surprendre.</p><button class="character-link" type="button" data-character="cardistral">VOIR LA FICHE <svg class="icon"><use href="#i-arrow-up"></use></svg></button></div></article>
+          <article class="character-card qrow" data-status="concept"><div class="card-accent"></div><div class="character-top"><span>04 / ARCHER</span><span>EN CONCEPTION</span></div><div class="character-illustration"><div class="character-orbit orbit-a"></div><div class="character-orbit orbit-b"></div><span class="character-initial">Q</span><svg class="icon character-symbol"><use href="#i-bow"></use></svg></div><div class="character-info"><span class="character-eyebrow">MOBILITÉ & RECONNAISSANCE</span><h3>QROW</h3><p>Furtivité, arc et mobilité extrême : prendre de vitesse ses adversaires.</p><button class="character-link" type="button" data-character="qrow">VOIR LA FICHE <svg class="icon"><use href="#i-arrow-up"></use></svg></button></div></article>
+          <article class="character-card operateur" data-status="concept"><div class="card-accent"></div><div class="character-top"><span>05 / PILOTE DISTANT</span><span>EN CONCEPTION</span></div><div class="character-illustration"><div class="character-orbit orbit-a"></div><div class="character-orbit orbit-b"></div><span class="character-initial">O</span><svg class="icon character-symbol"><use href="#i-drone"></use></svg></div><div class="character-info"><span class="character-eyebrow">MÉKAS & DRONES</span><h3>OPÉRATEUR</h3><p>Absent du champ de bataille, il agit à travers des robots contrôlés à distance.</p><button class="character-link" type="button" data-character="operateur">VOIR LA FICHE <svg class="icon"><use href="#i-arrow-up"></use></svg></button></div></article>
+        </div>
+        <p class="section-note">Les illustrations sont des symboles graphiques temporaires. Elles pourront être remplacées par les visuels officiels de tes héros.</p>
+      </div>
+    </section>
+
+    <section class="section modes-section" id="modes" aria-labelledby="modes-title">
+      <div class="container">
+        <div class="section-heading two-col-heading"><div><p class="section-kicker"><span>03 /</span> LES MODES</p><h2 id="modes-title">PLUS D'UNE FAÇON<br><em>DE JOUER ENSEMBLE.</em></h2></div><p class="section-intro">De l'affrontement direct aux objectifs à défendre, SEA est pensé pour diversifier les situations de jeu. Ces modes sont des <strong>objectifs de développement</strong>, pas une liste de modes déjà disponibles.</p></div>
+        <div class="modes-grid">
+          <article class="mode-card featured-mode"><div class="mode-meta"><span>MODE 01 / OBJECTIF</span><span class="outlined-tag">EN CONCEPTION</span></div><svg class="icon mode-icon"><use href="#i-route"></use></svg><h3>ESCORTE<br>DE CONVOI</h3><p>Guider un convoi à travers plusieurs secteurs pendant que l'équipe adverse tente de l'arrêter.</p><div class="route-preview" aria-hidden="true"><span class="route-start">A</span><span class="route-track"><i></i><i></i><i></i></span><span class="route-end">B</span></div></article>
+          <article class="mode-card"><div class="mode-meta"><span>MODE 02</span><span>PRÉVU</span></div><svg class="icon mode-icon"><use href="#i-team"></use></svg><h3>COMBAT 3V3</h3><p>Deux petites équipes, des héros complémentaires, une coordination décisive.</p></article>
+          <article class="mode-card"><div class="mode-meta"><span>MODE 03</span><span>PRÉVU</span></div><svg class="icon mode-icon"><use href="#i-zones"></use></svg><h3>CAPTURE DE POINTS</h3><p>Contester et conserver des zones stratégiques de la carte.</p></article>
+          <article class="mode-card"><div class="mode-meta"><span>MODE 04</span><span>PRÉVU</span></div><svg class="icon mode-icon"><use href="#i-flag"></use></svg><h3>CAPTURE DE DRAPEAU</h3><p>S'infiltrer, récupérer l'objectif adverse et le ramener à son camp.</p></article>
+          <article class="mode-card"><div class="mode-meta"><span>MODE 05</span><span>PRÉVU</span></div><svg class="icon mode-icon"><use href="#i-swords"></use></svg><h3>MATCH À MORT PAR ÉQUIPES</h3><p>Un affrontement collectif centré sur le combat et la synergie des héros.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section development-section" id="developpement" aria-labelledby="developpement-title">
+      <div class="container dev-grid"><div class="dev-left"><p class="section-kicker"><span>04 /</span> JOURNAL DE DÉVELOPPEMENT</p><h2 id="developpement-title">UN JEU<br><em>QUI PREND FORME.</em></h2><p>SEA évolue étape par étape sous Unity. Voici quelques jalons du prototype, sans promesse de date de sortie ni de disponibilité publique.</p><div class="dev-note"><span class="dev-note-light"></span><div><strong>STATUT ACTUEL</strong><span>Prototype indépendant en développement</span></div></div></div>
+        <div class="timeline">
+          <article class="timeline-item"><span class="timeline-node"></span><div class="timeline-top"><span>GAMEPLAY</span><span class="event-state">VALIDÉ EN TEST</span></div><h3>Blaze & Myranda</h3><p>Deux kits de personnages ont franchi leurs tests de gameplay et de multijoueur.</p></article>
+          <article class="timeline-item"><span class="timeline-node"></span><div class="timeline-top"><span>IDENTITÉ VISUELLE</span><span class="event-state inprogress">EN ÉVOLUTION</span></div><h3>Interfaces & HUD</h3><p>Création d'un langage graphique futuriste, plus épuré et adapté à chaque héros.</p></article>
+          <article class="timeline-item"><span class="timeline-node"></span><div class="timeline-top"><span>CONCEPTION</span><span class="event-state inprogress">EN COURS</span></div><h3>Nouveaux héros & cartes</h3><p>Travail sur Cardistral, Qrow, Opérateur et les cartes dédiées aux modes à objectifs.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projets" aria-labelledby="projets-title">
+      <div class="container">
+        <div class="section-heading two-col-heading"><div><p class="section-kicker"><span>05 /</span> AU-DELÀ DE SEA</p><h2 id="projets-title">UN PREMIER JEU.<br><em>D'AUTRES À INVENTER.</em></h2></div><p class="section-intro">Cette vitrine est conçue pour accueillir d'autres jeux à l'avenir, sans avoir à reconstruire tout le site.</p></div>
+        <div class="project-grid">
+          <a class="project-card project-sea" href="#haut"><div class="project-card-top"><span>PROJET 001</span><span>ACTIF</span></div><div class="project-sea-art" aria-hidden="true"><img src="assets/sea-mark.svg" alt="" width="100" height="100"><span>SEA</span></div><div class="project-card-footer"><div><strong>SHOOTER ENTRE AMIS</strong><small>HERO SHOOTER / MULTIJOUEUR</small></div><svg class="icon"><use href="#i-arrow-up"></use></svg></div></a>
+          <div class="project-card project-next"><div class="project-card-top"><span>PROJET 002</span><span>À VENIR</span></div><div class="next-art" aria-hidden="true">+</div><div class="project-card-footer"><div><strong>PROCHAIN UNIVERS</strong><small>AUCUN PROJET ANNONCÉ</small></div><span class="next-suffix">— —</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section" aria-labelledby="faq-title"><div class="container faq-layout"><div><p class="section-kicker"><span>06 /</span> INFOS UTILES</p><h2 id="faq-title">QUESTIONS<br><em>FRÉQUENTES.</em></h2></div><div class="faq-items"><details><summary>Est-ce que SEA est déjà disponible ?<svg class="icon"><use href="#i-chevron"></use></svg></summary><p>Non. SEA est actuellement un prototype en développement. Il n'y a pas encore de date de sortie publique annoncée.</p></details><details><summary>Sur quelles plateformes le jeu sortira-t-il ?<svg class="icon"><use href="#i-chevron"></use></svg></summary><p>SEA est développé avec Unity. Les plateformes de sortie ne sont pas encore confirmées. Des tests techniques sur iPad font partie de l'exploration du projet.</p></details><details><summary>Les capacités des personnages sont-elles définitives ?<svg class="icon"><use href="#i-chevron"></use></svg></summary><p>Non. Même les personnages dont le gameplay a été validé peuvent évoluer après équilibrage et tests. Les autres personnages sont encore en conception.</p></details></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-top"><div><a class="brand footer-brand" href="#haut"><img class="brand-mark" src="assets/sea-mark.svg" alt="" width="42" height="42"><span class="brand-type"><strong>SEA</strong><small>SHOOTER ENTRE AMIS</small></span></a><p>Un projet indépendant. Une idée simple : mieux jouer ensemble.</p></div><a class="back-top" href="#haut">RETOUR EN HAUT <svg class="icon"><use href="#i-arrow-up"></use></svg></a></div><div class="container footer-bottom"><span>© <span id="year">2026</span> SHOOTER ENTRE AMIS</span><span>SITE DE PRÉSENTATION — PROTOTYPE EN DÉVELOPPEMENT</span><span>FAIT POUR ÉVOLUER AVEC TES JEUX</span></div></footer>
+
+  <dialog class="character-dialog" id="character-dialog" aria-labelledby="dialog-title"><button class="dialog-close" id="dialog-close" aria-label="Fermer la fiche du héros" type="button"><svg class="icon"><use href="#i-close"></use></svg></button><div class="dialog-inner"><p class="section-kicker" id="dialog-category">FICHE HÉROS</p><h2 id="dialog-title"></h2><p class="dialog-status" id="dialog-status"></p><p id="dialog-description"></p><h3>STYLE DE JEU</h3><ul id="dialog-abilities"></ul><p class="dialog-footnote">Informations de conception susceptibles d'évoluer au fil du développement.</p></div></dialog>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
