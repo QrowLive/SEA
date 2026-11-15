@@ -29,7 +29,7 @@ const characters = {
   operateur: {
     name: 'OPÉRATEUR', category: '05 / PILOTE DISTANT', status: 'EN CONCEPTION',
     description: "Opérateur reste hors de la carte : le joueur combat en dirigeant à distance trois mékas et différents drones ou robots. Un rôle asymétrique encore en conception.",
-    abilities: ["Le personnage contrôleur n’est jamais physiquement sur la carte","Contrôle distant de trois mékas","Drones et robots pour couvrir le terrain","Décisions tactiques prises depuis une position hors arène","Les commandes, statistiques et équilibrages restent à définir"],
+    abilities: ["Le personnage contrôleur n’est jamais physiquement sur la carte","Contrôle distant de trois mékas","Drones et robots pour couvrir le terrain","Décisions tactiques prises depuis une position hors arène","À 0 PV normaux : désactivation du méka et barre distincte de 20 000 PV","Le coup ou groupe d’impacts simultanés qui désactive le méka ne reporte aucun excédent sur cette barre","Les dégâts sur la durée déjà actifs persistent ; leurs nouveaux ticks peuvent réduire la barre de désactivation","Règles de conception validées ; implémentation et équilibrage à vérifier"],
     stats: ["3 mékas","Drones","Hors arène"]
   }
 };
