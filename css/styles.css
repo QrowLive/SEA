@@ -436,3 +436,19 @@ h2 em { font-style:normal; color:#819eae; }
 .squad-preview span:last-child{color:var(--cyan)}
 .squad-preview strong{font-size:14px;font-weight:900;letter-spacing:.2em;color:var(--magenta);border:1px solid rgba(212,130,203,.45);padding:9px 12px}
 @media(max-width:580px){.squad-preview{padding-top:45px}}
+
+/* Portraits officiels SEA : rendu homogène, source graphique préservée */
+.character-illustration{isolation:isolate}
+.character-portrait{position:absolute;inset:0;width:100%;height:100%;z-index:3;object-fit:contain;object-position:center 45%;filter:drop-shadow(0 14px 16px rgba(0,0,0,.26));pointer-events:none}
+.character-portrait[hidden]{display:none}
+.character-illustration:has(.character-portrait:not([hidden])) .character-orbit,
+.character-illustration:has(.character-portrait:not([hidden])) .character-initial,
+.character-illustration:has(.character-portrait:not([hidden])) .character-symbol{opacity:0}
+.character-card.blaze .character-illustration{background:radial-gradient(ellipse at 50% 65%,rgba(234,145,71,.19),transparent 65%),#0c1823}
+.character-card.myranda .character-illustration{background:radial-gradient(ellipse at 50% 65%,rgba(238,117,203,.19),transparent 65%),#0c1823}
+.character-card.cardistral .character-illustration{background:radial-gradient(ellipse at 50% 65%,rgba(148,73,238,.22),transparent 65%),#0c1823}
+.character-card.qrow .character-illustration{background:radial-gradient(ellipse at 50% 65%,rgba(235,51,94,.15),transparent 65%),#0c1823}
+.character-card.operateur .character-illustration{background:radial-gradient(ellipse at 50% 65%,rgba(88,173,244,.18),transparent 65%),#0c1823}
+.character-card:hover .character-portrait{transform:scale(1.025)}
+.character-portrait{transition:transform .35s var(--ease)}
+@media(min-width:1101px){.character-illustration{height:260px}}
