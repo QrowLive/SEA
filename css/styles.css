@@ -452,3 +452,12 @@ h2 em { font-style:normal; color:#819eae; }
 .character-card:hover .character-portrait{transform:scale(1.025)}
 .character-portrait{transition:transform .35s var(--ease)}
 @media(min-width:1101px){.character-illustration{height:260px}}
+
+/* SEA Portraits V2 — pas de liserés partiels incorporés, cadre uniforme CSS */
+.character-illustration{height:300px;overflow:hidden;position:relative;background-color:#0c1823}
+.character-portrait{display:block;object-fit:cover;object-position:center top;max-width:none;transition:transform .35s var(--ease)}
+.character-card:hover .character-portrait{transform:scale(1.025)}
+.character-illustration:has(.character-portrait:not([hidden]))::before{content:"";position:absolute;inset:0;z-index:4;pointer-events:none;background:linear-gradient(0deg,rgba(12,24,35,.22),transparent 30%);border:0;transform:none}
+.character-illustration:has(.character-portrait:not([hidden]))::after{display:none}
+@media(max-width:1370px){.character-illustration{height:285px}}
+@media(max-width:580px){.character-illustration{height:340px}}
